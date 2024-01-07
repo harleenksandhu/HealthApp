@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".Frontend.DoctorActivities.DoctorShifts">
+
+    <Button
+        android:id="@+id/buttonNoDeleteShift"
+        android:layout_width="102dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#1F7A8C"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickNoDeleteButton"
+        android:text="No"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAddShift"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmation" />
+
+    <TextView
+        android:id="@+id/textViewShiftsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/barlow_medium"
+        android:text="Shifts"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewShifts"
+        android:layout_width="364dp"
+        android:layout_height="402dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddShift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShiftsTitle" />
+
+    <Button
+        android:id="@+id/buttonAddShift"
+        android:layout_width="292dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1F7A8C"
+        android:fontFamily="@font/barlow"
+        android:text="Add Shift"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDeleteShift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewShifts" />
+
+
+    <Button
+        android:id="@+id/buttonDeleteShift"
+        android:layout_width="292dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#1F7A8C"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickDeleteShiftButton"
+        android:text="Delete Shift"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonYesDeleteShift"
+        android:layout_width="102dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#1F7A8C"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickYesDeleteShiftButton"
+        android:text="Yes"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoDeleteShift"
+        app:layout_constraintTop_toBottomOf="@+id/textConfirmation" />
+
+    <TextView
+        android:id="@+id/textConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/barlow"
+        android:text="Delete selected shift?"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewShifts" />
+
+    <TextView
+        android:id="@+id/textWarning"
+        android:layout_width="372dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/barlow"
+        android:text="Please select the shift to delete first!"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteShift" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#B8B6B6"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickBackButton"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cannotDeleteShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/barlow"
+        android:text="Selected shift has 1 or more appointment booked!"
+        android:textAlignment="center"
+        android:textColor="#EF1F10"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteShift" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

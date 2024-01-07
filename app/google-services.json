@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "558026114540",
+    "firebase_url": "https://seg2105-hams-default-rtdb.firebaseio.com",
+    "project_id": "seg2105-hams",
+    "storage_bucket": "seg2105-hams.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558026114540:android:8c7557143292655cab2cc9",
+        "android_client_info": {
+          "package_name": "com.example.seg2105_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlfaLIwGGYmRS7oBfpPBpQ1U9aH4J2ve4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558026114540:android:68fdb89dcfce3681ab2cc9",
+        "android_client_info": {
+          "package_name": "com.example.seg_2105_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlfaLIwGGYmRS7oBfpPBpQ1U9aH4J2ve4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

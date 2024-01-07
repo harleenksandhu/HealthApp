@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frontend.DoctorActivities.Doctor_SignUp">
+
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="126dp"
+        android:fontFamily="@font/barlow"
+        android:text="First name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="#1F7A8C"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickSignUp"
+        android:text="Sign up"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/account_pass"
+        app:layout_constraintStart_toStartOf="@+id/employee_num" />
+
+    <EditText
+        android:id="@+id/first_name_enter"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/email_address"
+        app:layout_constraintEnd_toEndOf="@+id/email_address_enter"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
+        app:layout_constraintTop_toTopOf="@+id/first_name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/barlow"
+        android:text="Please enter your information"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/barlow"
+        android:text="Last name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/last_name_enter"
+        app:layout_constraintStart_toEndOf="@+id/first_name_enter" />
+
+    <EditText
+        android:id="@+id/last_name_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/first_name_enter"
+        app:layout_constraintEnd_toEndOf="@+id/last_name"
+        app:layout_constraintStart_toEndOf="@+id/last_name" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="225dp"
+        android:fontFamily="@font/barlow"
+        android:text="Email address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_address_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/account_password_enter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/account_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/barlow"
+        android:text="Account password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/last_name_enter"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_enter" />
+
+    <EditText
+        android:id="@+id/account_password_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="@+id/account_pass"
+        app:layout_constraintTop_toBottomOf="@+id/account_pass" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/barlow"
+        android:text="Phone number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_address_enter" />
+
+    <EditText
+        android:id="@+id/phone_number_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/address_enter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/barlow"
+        android:text="Address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/address_enter"
+        app:layout_constraintStart_toEndOf="@+id/phone_number_enter" />
+
+    <EditText
+        android:id="@+id/address_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <TextView
+        android:id="@+id/employee_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/barlow"
+        android:text="Employee number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/specialty"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_enter" />
+
+    <EditText
+        android:id="@+id/employee_num_enter"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/specialty_enter"
+        app:layout_constraintEnd_toStartOf="@+id/specialty_enter"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/specialty"
+        android:layout_width="164dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/barlow"
+        android:text="Specialties (separate using commas)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/address_enter"
+        app:layout_constraintTop_toBottomOf="@+id/address_enter" />
+
+    <EditText
+        android:id="@+id/specialty_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:fontFamily="@font/barlow"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/address_enter"
+        app:layout_constraintStart_toStartOf="@+id/address_enter"
+        app:layout_constraintTop_toBottomOf="@+id/specialty" />
+
+    <TextView
+        android:id="@+id/textViewLastNameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your last name"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/last_name_enter"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFirstNameError"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your first name"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/first_name"
+        app:layout_constraintStart_toStartOf="@+id/first_name" />
+
+    <TextView
+        android:id="@+id/textViewAddressError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your address"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/textViewPasswordError"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your password (at least 6 characters)"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/account_pass"
+        app:layout_constraintStart_toStartOf="@+id/account_pass" />
+
+    <TextView
+        android:id="@+id/textViewEmailError"
+        android:layout_width="166dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your email address"
+        android:textColor="#f01616"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/email_address"
+        app:layout_constraintStart_toStartOf="@+id/email_address" />
+
+    <TextView
+        android:id="@+id/textViewPhoneNumberError"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your phone number (10 digits)"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_number"
+        app:layout_constraintStart_toStartOf="@+id/phone_number" />
+
+    <TextView
+        android:id="@+id/textViewEmployeeNumberError"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your employee number (9 digits)"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/employee_num"
+        app:layout_constraintStart_toStartOf="@+id/employee_num" />
+
+    <TextView
+        android:id="@+id/textViewSpecialtyError"
+        android:layout_width="164dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/barlow"
+        android:text="*Please enter your specialties (seperated by a comma)"
+        android:textColor="#f01616"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/specialty"
+        app:layout_constraintStart_toStartOf="@+id/specialty" />
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#B8B6B6"
+        android:fontFamily="@font/barlow"
+        android:onClick="onClickBackButton"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
